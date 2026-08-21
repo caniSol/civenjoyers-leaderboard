@@ -1,5 +1,5 @@
 def read_csv(filepath: str) -> list[dict[str, int | str]]:
-    output_list = []
+    output_list: list[dict[str, int | str]] = []
 
     with open(filepath, "r") as file:
         split_file = file.read().split("\n")
@@ -11,7 +11,7 @@ def read_csv(filepath: str) -> list[dict[str, int | str]]:
 
             split_line = entry.split(",")
 
-            line_dic = {}
+            line_dic: dict[str, int | str] = {}
 
             for i in range(len(headline)):
                 try:
