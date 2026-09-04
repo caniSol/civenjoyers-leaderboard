@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'elo/style.css' %}">
+
+<head>
+    <title>
+        Civenjoyers Leaderboard
+    </title>
+</head>
+
+<body>
+    <h1>Civenjoyers Leaderboard</h1>
+    <ul>
+        {% for player in players %}
+        <div class="player_entry">
+            <li>
+                <h3><span class="placement">#{{ player.place }}</span> {{ player.name }}</h3>
+                <h4>{{ player.elo }} Elo <span class="left-padding">{{ player.wins }} wins</span></h4>
+            </li>
+        </div>
+        {% endfor %}
+    </ul>
+</body>

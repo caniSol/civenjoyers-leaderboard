@@ -1,0 +1,40 @@
+body {
+    background-color: black;
+}
+
+h1 {
+    color: whitesmoke;
+}
+
+h3 {
+    margin: 10px;
+    color: white;
+
+}
+
+h4 {
+    margin: 10px;
+    color: whitesmoke;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.player_entry {
+    border-width: 1px;
+    border-color: lightgrey;
+    border-style: solid;
+    margin: 10px;
+    background-color: #141414;
+}
+
+.placement {
+    color: #ffb60e
+}
+
+.left-padding {
+    padding-left: 20px;
+}
