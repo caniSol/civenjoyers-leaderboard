@@ -2,9 +2,9 @@
 0% AI included, everything is coded by my hand as exercise. I'm definitely not a designer, so the CSS is kinda garbage.
 
 # Security notice
-Currently there are no security measures implemented for SSL or HTTPS, the app is intendet to be run behind a reverse proxy which takes care of these things.
+Currently there are no security measures implemented for SSL or HTTPS, the app is intended to be run behind a reverse proxy which takes care of these things.
 
-# Insatallation
+# Installation
 The repo is supposed to be built as a docker image.
 
 ## Variables
