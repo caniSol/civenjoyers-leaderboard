@@ -1,8 +1,0 @@
----
-name: Civenjoyers Leaderboard
-services:
-  leaderboard:
-    image:
-    env:
-      - SECRET_KEY=
-    restart: unless-stopped

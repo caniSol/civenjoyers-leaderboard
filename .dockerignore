@@ -5,3 +5,10 @@ __pycache__
 db.sqlite3
 README.md
 compose.yml
+elo/migrations/
+build.sh
+container_test/
+data/
+.git/
+Dockerfile
+.dockerignore

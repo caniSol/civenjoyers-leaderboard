@@ -34,12 +34,8 @@ def compute_compare_options(game) -> list[tuple[str, str]]:
 
 def apply_elo_gain(elo_gain, players):
     for player in elo_gain:
-        print(f"Before Elo {player.name}: {player.elo}, Gain: {elo_gain[player]}")
         player.elo = elo_gain[player] + player.elo
         player.save()
-        print(f"After Elo {player.name}: {player.elo}, Gain: {elo_gain[player]}")
-
-
 
 def compute_elo(game, players) -> None:
     elo_gain: dict[str, int] = {}

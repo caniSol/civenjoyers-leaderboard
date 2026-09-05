@@ -12,3 +12,8 @@ wheels/
 # Data folder
 db.sqlite3
 config.py
+elo/migrations/
+data/
+
+build.sh
+container_test/

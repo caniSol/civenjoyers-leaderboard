@@ -18,15 +18,15 @@ class Player(models.Model):
 
 class Game(models.Model):
     WINCONS = {
-        "FF": "Forefeit",
-        "CU": "Culture",
-        "SC": "Science",
-        "RG": "Religion",
-        "DP": "Diplomacy",
-        "DM": "Domination",
+        "F": "Forefeit",
+        "C": "Culture",
+        "S": "Science",
+        "R": "Religion",
+        "D": "Diplomacy",
+        "M": "Domination",
     }
     date = models.DateField()
-    wincon = models.CharField(max_length=2, choices=WINCONS)
+    wincon = models.CharField(max_length=1, choices=WINCONS)
     place1 = models.ForeignKey(Player, on_delete=models.RESTRICT, related_name="+")
     place2 = models.ForeignKey(Player, on_delete=models.RESTRICT, related_name="+")
     place3 = models.ForeignKey(Player, on_delete=models.RESTRICT, related_name="+", blank=True, null=True)
@@ -44,6 +44,7 @@ class Game(models.Model):
 
         for player in Player.objects.all():
             player.elo = 1000
+            player.wins = 0
             player.save()
 
         for game in list(Game.objects.all()):
