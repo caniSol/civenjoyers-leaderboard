@@ -21,3 +21,4 @@ The project uses a local sqlite DB, you have to provide a docker volume or bind 
 - [ ] Page for users to submit new games and players
 - [ ] Fix standings (higher place with more wind when even in elo, same place when both is identical)
 - [ ] Option to use Postgres just for educational purposes
+- [ ] Implement test suites for all features
