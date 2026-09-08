@@ -28,6 +28,13 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
+SECURE_PROXY_SSL_HEADER = ("X-Forwarded-Proto", "https")
+
+CSRF_TRUSTED_ORIGINS = ["https://www.bty.works", "https://www.bty.works:9443", "https://bty.works", "https://bty.works:9443"]
+
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
+SECURE_SSL_REDIRECT = False
 
 # Application definition
 

@@ -12,3 +12,4 @@ data/
 .git/
 Dockerfile
 .dockerignore
+static/
