@@ -17,3 +17,4 @@ data/
 
 build.sh
 container_test/
+static/

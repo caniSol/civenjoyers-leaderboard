@@ -26,8 +26,15 @@ SECRET_KEY = os.environ["SECRET_KEY"]
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['.localhost', '127.0.0.1', '[::1]']
+ALLOWED_HOSTS = ['*']
 
+SECURE_PROXY_SSL_HEADER = ("X-Forwarded-Proto", "https")
+
+CSRF_TRUSTED_ORIGINS = ["https://www.bty.works", "https://www.bty.works:9443", "https://bty.works", "https://bty.works:9443"]
+
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
+SECURE_SSL_REDIRECT = False
 
 # Application definition
 
@@ -117,7 +124,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/6.1/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = 'leaderboard/static/'
 STATIC_ROOT = BASE_DIR / "static/"
 
 

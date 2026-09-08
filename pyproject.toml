@@ -1,6 +1,6 @@
 [project]
 name = "civenjoyers-leaderboard"
-version = "1.0.0"
+version = "1.0.4"
 description = "A leaderboard Webapp which tracks the ELO of our semi-regular Civ 6 sessions"
 readme = "README.md"
 requires-python = ">=3.13"
